@@ -6,10 +6,14 @@ type GradeSelectorProps = {
   onSelect: (grade: string) => void;
 };
 
-const GradeSelector: React.FC<GradeSelectorProps> = ({ grades, selectedGrade, onSelect }) => {
+const GradeSelector: React.FC<GradeSelectorProps> = ({
+  grades,
+  selectedGrade,
+  onSelect,
+}) => {
   return (
     <div style={{ marginBottom: '20px' }}>
-      {grades.map(grade => (
+      {grades.map((grade) => (
         <button
           key={grade}
           onClick={() => onSelect(grade)}
@@ -18,7 +22,7 @@ const GradeSelector: React.FC<GradeSelectorProps> = ({ grades, selectedGrade, on
             padding: '10px',
             backgroundColor: selectedGrade === grade ? '#9FA09B' : '#f0f0f0',
             border: '1px solid #ccc',
-            cursor: 'pointer'
+            cursor: 'pointer',
           }}
         >
           {grade}

@@ -8,11 +8,12 @@
 
 ---
 
-## 使用方法
+## 簡易的な使用方法
 
 ```bash
 git clone git@github.com:j341nono/PickMe.git
 cd PickMe
+
 npm install
 npm start
 ```
